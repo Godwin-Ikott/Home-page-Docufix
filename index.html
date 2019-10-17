@@ -1,145 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOCUFIX</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    #showcase {
-    background: #333 url('/image 7.png') no-repeat center center/cover;
-    height: 100vh;
-    color: #000;
-    }
-#showcase {
-    font-family: 'Ubuntu', sans-serif;
-    
-    }
-.container {
-    max-width: 1100;
-    margin: auto;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-
-#showcase .showcase-content {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 2rem;
-    }
-
-#showcase .showcase-content .showcase-text {
-    width: 50%;
-    text-align: left;
-}
-
-#showcase .showcase-content .showcase-text a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: rgb(102, 99, 99) solid 1px;
-    }
-
-.large-heading {
-    font-size: 4.5rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-.lead {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-.btn {
-    display: inline-block;
-    color: #000;
-    background: transparent;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 15px;
-}
-
-.btn:hover {
-    background: #000;
-    color: #fff;
-    }
-
-@media(max-width:800px){
-    #showcase .showcase-content {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #showcase .showcase-content .showcase-text {
-        margin-top: 3rem;
-        text-align: center;
-    }
-    .large-heading {
-    font-size: 3rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-    .lead {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    }
-
-}
-
-@media(max-width:500px){
-    #showcase .showcase-content {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #showcase .showcase-content .showcase-text {
-        margin-top: 4rem;
-        text-align: center;
-    }
-
-    #showcase .showcase-content .showcase-img {
-        display: none;
-    }
-    .large-heading {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
-    line-height: 1.1;
-}
-
-    .lead {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    }
-
-}
-    </style>
-</head>
-<body>
-    <header id="showcase" class="container">
-        <div class="showcase-content">
-            <div class="showcase-text">
-            <h1 class="large-heading">Document Comparison Solution</h1>
-            <p class="lead">
-                Compare document content and find out the Differences 
-                contained in each of the files without much stress
-            </p>
-            <a href="" class="btn">Get Started</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Docufix</title>
+    </head>
+    <body style="background-color:  #DDE8E8; font-family: Ubuntu;">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html" style="font-weight: bold;"
+                        >DOCUFIX</a
+                    >
+                    <button
+                        class="navbar-toggler border-0"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul
+                            class="navbar-nav ml-auto"
+                            style="font-weight: bold;"
+                        >
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Sponsors</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row align-items-center mt-5" style="min-height: 80vh">
+                <div class="col-md-7">
+                    <h2 style="font-weight:bold;">
+                        
+                        Document Comparison Solution
+                    </h2>
+                    <p>
+                        Compare document content and find out the differences
+                        contained in each of the files without stress
+                    </p>
+                    <a
+                        href="#"
+                        class="btn  p-2  btn-outline-dark"
+                        style="font-weight: bold;"
+                        >Get Started</a
+                    >
+                </div>
+                <div class="col-md-5">
+                    <img
+                        src="./images/undraw_collecting_fjjl 1.svg"
+                        alt=""
+                        style="width: 100%; height:400px;"
+                    />
+                </div>
+            </div>
         </div>
-        <div class="showcase-img">
-            <img src="/undraw_collecting_fjjl 1.png" alt="files">
+        <div style="background-color:  #BDBDBD">
+            <div class="container">
+                <h3
+                    class="text-center mb-5 pt-5"
+                    style="color: darkgreen; font-weight: bold"
+                >
+                    Our Features
+                </h3>
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold text-center">Plagiarism Checker</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold  text-center">Plagiarism Checker</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold  text-center">Security</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold  text-center">Copy Leaks API</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold  text-center">Copy Leaks API</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h4 class="font-weight-bold  text-center">Copy Leaks API</h4>
+                        <img
+                            src="./images/IMG-20191016-WA0000.jpg"
+                            alt=""
+                            style="height: 100px; width:90%;"
+                        />
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Molestiae recusandae eaque iste excepturi sit
+                            quasi maxime repudiandae odio, asperiores,
+                            necessitatibus debitis ipsa? Cupiditate expedita ad
+                            eius veniam animi, cum dolor.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-    </header>
-</body>
+        <footer style="background-color: rgba(153, 157, 158, 0.808); color: white">
+            <div class="bg-dark p-4"></div>
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-sm-2 text-center font-weight-bold"><p>DOCUFIX</p></div>
+                    <div class="col-sm-8 text-center font-weight-bold">
+                        <p>Copyright 2019 Docufix.io and HNG6 Affiliates</p>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <a href="#" class="p-2"
+                            ><img
+                                src="./images/facebook.svg"
+                                alt=""
+                                style="height: 16px; width:16px;"/></a
+                        ><a href="#" class="p-2"
+                            ><img
+                                src="./images/twitter.svg"
+                                alt=""
+                                style="height: 16px; width:16px;"/></a
+                        ><a href="#" class="p-2"
+                            ><img
+                                src="./images/instagram.svg"
+                                alt=""
+                                style="height: 16px; width:16px;"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
 </html>
